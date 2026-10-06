@@ -1,0 +1,29 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    Para se avaliar o nível de tensão ocasionada por exames escolares, doze alunos foram escolhidos e sua pulsação medida antes e depois do exame.
+
+    \begin{center}
+    \begin{tabular}{|c|cccccccccccc|}
+        \hline
+        \multirow{2}{*}{Instante da medição} & \multicolumn{12}{c|}{Estudante} \\
+        \cline{2-13}
+        & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+        \hline
+        Antes  & 87 & 78 & 85 & 93 & 76 & 80 & 82 & 77 & 91 & 74 & 76 & 79 \\
+        Depois & 83 & 84 & 79 & 88 & 75 & 81 & 74 & 71 & 78 & 73 & 76 & 71 \\
+        \hline
+    \end{tabular}
+    \end{center}
+
+    Faça um teste, com nível de significância de \(1\%\), para verificar se existe maior tensão (isto é, maior pulsação) antes da realização dos exames. Indique as suposições necessárias.
+\end{exercicioBanco}
+

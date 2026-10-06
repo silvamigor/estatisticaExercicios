@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+A tabela a seguir apresenta a distribuição de frequências dos salários (em salários mínimos) dos funcionários de uma empresa:
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Salário ($S_i$) & Frequência ($f_i$) \\ \hline
+$2 \vdash 4$ & 4 \\ \hline
+$4 \vdash 6$ & 10 \\ \hline
+$6 \vdash 8$ & 4 \\ \hline
+$8 \vdash 10$ & 2 \\ \hline
+\end{tabular}
+\end{center}
+
+Com base nesses dados, determine:
+
+\begin{enumerate}[(a)]
+    \item A variância populacional ($\sigma^2$).
+    \item O desvio padrão populacional ($\sigma$).
+    \item O coeficiente de variação ($CV$).
+\end{enumerate}
+\end{exercicioBanco}

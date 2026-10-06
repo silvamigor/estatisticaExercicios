@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{../../Preambulo.tex}
+\newcommand{\assunto}{TESTE DE HIPÓTESES}
+\newcommand{\atividade}{lista} % prova ou lista
+\input{../../Variaveis.tex}
+
+\hypersetup{
+    pdfauthor={\professor},
+    pdftitle={\titulo -- \assunto},
+}
+
+\title{\titulo -- \assunto}
+\author{\professor}
+\date{\data}
+
+%************* INÍCIO DO DOCUMENTO *************
+\begin{document}
+    \subtitulo
+        
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 1}
+    \input{../I-TH_Exercicio1}
+    \noindent\rule{\linewidth}{1pt}  % linha horizontal fina
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 2}
+    \input{../I-TH_Exercicio2}
+    \noindent\rule{\linewidth}{1pt}  % linha horizontal fina
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 3}
+    \input{../I-TH_Exercicio3}
+    \noindent\rule{\linewidth}{1pt}  % linha horizontal fina
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 4}
+    \input{../I-TH_Exercicio4}
+    \noindent\rule{\linewidth}{1pt}  % linha horizontal fina
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 5}
+    \input{../I-TH_Exercicio5}
+    \noindent\rule{\linewidth}{1pt}  % linha horizontal fina
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 6}
+    \input{../I-TH_Exercicio6}
+    \noindent\rule{\linewidth}{1pt}  % linha horizontal fina
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 7}
+    \input{../I-TH_Exercicio7}
+    \noindent\rule{\linewidth}{1pt}  % linha horizontal fina
+\end{document}
+%*************** FINAL DO DOCUMENTO ***************

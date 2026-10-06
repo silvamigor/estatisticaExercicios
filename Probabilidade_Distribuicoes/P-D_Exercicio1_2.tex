@@ -1,0 +1,37 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Uma variável aleatória discreta \(X\) tem a seguinte função de distribuição
+%
+\[
+    F(x) = \left\{
+    \begin{array}{rl}
+        0, & \text{se } x < 0, \\
+        0,1, & \text{se } 0 \le x < 1, \\
+        0,4, & \text{se } 1 \le x < 3, \\
+        0,6, & \text{se } 3 \le x < 4, \\
+        0,85, & \text{se } 4 \le x < 10, \\
+        1 & \text{se } x \ge 10. \\
+    \end{array}
+    \right.
+\]
+%
+Determine:
+\begin{enumerate}[(a)]
+    \begin{multicols}{2}
+        \item A função de probabilidade de \(X\).
+        %
+        \item \(P(2 \le X \le 8)\).
+    \end{multicols}
+\end{enumerate}
+%
+\end{exercicioBanco}
+

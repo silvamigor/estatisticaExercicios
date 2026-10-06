@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+O volume diário de leite produzido por uma cooperativa agrícola (em milhares de litros) foi registrado durante 40 dias consecutivos e é apresentado no rol a seguir:
+
+\begin{center}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|C{30pt}|C{30pt}|C{30pt}|C{30pt}|C{30pt}|C{30pt}|C{30pt}|C{30pt}|C{30pt}|C{30pt}|}
+        \hline
+        10.2 & 10.4 & 10.5 & 10.7 & 11.0 & 11.1 & 11.3 & 11.4 & 11.5 & 11.5 \\
+        \hline
+        11.6 & 11.6 & 11.7 & 11.7 & 11.8 & 11.8 & 11.8 & 11.9 & 11.9 & 12.0 \\
+        \hline
+        12.0 & 12.1 & 12.1 & 12.2 & 12.2 & 12.3 & 12.3 & 12.4 & 12.4 & 12.5 \\
+        \hline
+        12.6 & 12.7 & 12.8 & 13.0 & 13.1 & 13.3 & 13.5 & 13.6 & 13.8 & 14.2 \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\begin{enumerate}[(a)]
+    \item Construa o histograma dessa variável estatística, considerando intervalos de classe com amplitude igual a \(0.8\), iniciando a primeira classe em \(10.0\).
+    %
+    \item Construa o boxplot (diagrama de caixas) correspondente a esse conjunto de dados.
+\end{enumerate}
+%
+\end{exercicioBanco}
+

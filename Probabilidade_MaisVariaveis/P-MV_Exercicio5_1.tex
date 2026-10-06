@@ -1,0 +1,39 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    A função conjunta de probabilidade entre as variáveis \(X\) e \(Y\) é apresentada abaixo.
+    %
+    \[
+    \renewcommand{\arraystretch}{1.5}
+    \begin{array}{|c|c|c|c|c|c|}
+        \hline
+        X\backslash Y & -1 & 0 & 2 & 4 & P(X = x) \\
+        \hline
+        -2 &  & \frac{3}{64} & \frac{1}{32} &  & \frac{5}{16} \\
+        \hline
+        -1 & \frac{1}{16} & \frac{1}{16} & 0 &  &  \\
+        \hline
+        1 & \frac{1}{64} & \frac{11}{64} &  & \frac{1}{64} & \frac{5}{16} \\
+        \hline
+        2 & \frac{5}{64} &  & \frac{3}{64} & \frac{1}{32} &  \\
+        \hline
+        P(Y = y) &  & \frac{5}{16} &  & \frac{1}{4} & 1 \\
+        \hline
+    \end{array}
+    \]
+    %
+    \begin{enumerate}[(a)]
+        \item Complete a tabela.
+        \item Obtenha as marginas de \(X\) e \(Y\).
+        \item Calcule a função de probabilidade da variável \(XY\).
+    \end{enumerate}
+\end{exercicioBanco}
+

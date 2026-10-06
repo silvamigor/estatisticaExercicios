@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    Para famílias de um certo bairro de Contagem, apresentamos abaixo a tabela de frequência conjunta das variáveis: \textit{número de automóveis} (A) e \textit{número de televisões} (T)
+    %
+    \[
+    \begin{array}{|c|c|c|c|c|}
+        \hline
+        A\backslash T & 0 & 1 & 2 & \text{Total} \\
+        \hline
+        0 & 110 & 235 & 120 & 465 \\
+        \hline
+        1 & 51 & 122 & 178 & 351 \\
+        \hline
+        2 & 15 & 84 & 162 & 261 \\
+        \hline
+        \text{Total} & 176 & 441 & 460 & 1077 \\
+        \hline
+    \end{array}
+    \]
+    %
+    Determine as tabelas marginas de \(A\) e \(T\) e calcule suas médias.
+\end{exercicioBanco}
+

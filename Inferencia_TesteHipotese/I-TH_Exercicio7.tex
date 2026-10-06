@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    Quatro máquinas de grande porte trabalham de forma independente e, ao fim da jornada de trabalho, são vistoriadas pelo controle de qualidade. Caso necessitem, serão ajustadas. Das informações arquivadas pela empresa, sorteamos 22 dias e anotamos o número de máquinas que sofreram ajuste nesses dias. Os dados são apresentados na tabela abaixo. O engenheiro de manutenção pretende verificar se é adequado o modelo Binomial com \(n=4\) e probabilidade de ajuste \(p=0{,}1\). Use um nível de significância de \(4\%\).
+
+    \begin{center}
+    \begin{tabular}{|c|ccccc|}
+        \hline
+        Ajustes diários & 0 & 1 & 2 & 3 & 4 \\
+        \hline
+        Frequência      & 13 & 6 & 2 & 1 & 0 \\
+        \hline
+    \end{tabular}
+    \end{center}
+\end{exercicioBanco}
+

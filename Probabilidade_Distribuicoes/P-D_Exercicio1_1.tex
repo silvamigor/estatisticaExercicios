@@ -1,0 +1,39 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Uma variável aleatória discreta \(X\) tem a seguinte função de distribuição
+%
+\[
+    F(x) = \left\{
+    \begin{array}{rl}
+        0, & \text{se } x < -1, \\
+        0,2, & \text{se } -1 \le x < 2, \\
+        0,5, & \text{se } 2 \le x < 5, \\
+        0,7, & \text{se } 5 \le x < 6, \\
+        0,9, & \text{se } 6 \le x < 15, \\
+        1 & \text{se } x \ge 15. \\
+    \end{array}
+    \right.
+\]
+%
+Determine:
+\begin{enumerate}[(a)]
+    \item A função de probabilidade de \(X\).
+    %
+    \item \(P(X \le -2)\).
+    %
+    \item \(P(X < 2)\).
+    %
+    \item \(P(3 \le X \le 12)\).
+\end{enumerate}
+%
+\end{exercicioBanco}
+

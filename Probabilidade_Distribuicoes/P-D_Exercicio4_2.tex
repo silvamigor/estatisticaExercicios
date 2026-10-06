@@ -1,0 +1,31 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Suponha que uma variável aleatória contínua tenha densidade de probabilidade dada por
+%
+\[
+    f(x) = \left\{
+    \begin{array}{rl}
+        kx, & \text{se } 0 < x < 2, \\
+        k(4 - x), & \text{se } 2 \le x < 4, \\
+        0, & \text{caso contrário}.
+    \end{array}
+    \right.
+\]
+%
+\begin{enumerate}[(a)]
+    \item Qual é o valor de \(k\)?
+    %
+    \item Quanto vale \(b\) tal que \(P(X < b) = \frac{3}{4}\)?
+\end{enumerate}
+%
+\end{exercicioBanco}
+

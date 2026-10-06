@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{../Preambulo.tex}
+\newcommand{\assunto}{ESTATÍSTICA DESCRITIVA E PROBABILIDADE}
+\newcommand{\atividade}{prova} % prova ou lista
+\usepackage{xfp}
+\newcommand{\ValorProva}{33}
+\newcommand{\NumTotalQuestoes}{5}
+\newcommand{\ValorQ}{%
+    \frac{\inteval{\ValorProva / gcd(\ValorProva,\NumTotalQuestoes)}}
+         {\inteval{\NumTotalQuestoes / gcd(\ValorProva,\NumTotalQuestoes)}}%
+}
+\input{../Variaveis.tex}
+
+\hypersetup{
+    pdfauthor={\professor},
+    pdftitle={\titulo -- \assunto},
+}
+
+\title{\titulo -- \assunto}
+\author{\professor}
+\date{\data}
+
+%************* INÍCIO DO DOCUMENTO *************
+\begin{document}
+        
+    \subtituloAlt
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 1}
+    \input{../EstatisticaDescritiva/ED_Exercicio4_2}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 2}
+    \input{../EstatisticaDescritiva/ED_Exercicio9_3}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 3}
+    \input{../Probabilidade_ConceitosIniciais/P-CI_Exercicio3_2}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 4}
+    \input{../Probabilidade_ConceitosIniciais/P-CI_Exercicio13_1}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 5}
+    \input{../Probabilidade_ConceitosIniciais/P-CI_Exercicio10_3}
+    
+    %\newpage 
+    
+    %\input{TabNormalPadrao}
+    
+    %\newpage
+    
+    %\input{TabelaTStudent}
+    
+\end{document}
+%*************** FINAL DO DOCUMENTO ***************

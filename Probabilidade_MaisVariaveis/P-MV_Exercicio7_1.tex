@@ -1,0 +1,33 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    Considere a função conjunta
+    \[
+        \renewcommand{\arraystretch}{1.5}
+        \begin{array}{|c|c|c|c|}
+            \hline
+            X \backslash Y & 0 & 1 & 2 \\
+            \hline
+            0 & \frac{1}{18} & \frac{1}{9} & \frac{1}{6} \\
+            \hline
+            1 & \frac{1}{9} & \frac{1}{18} & \frac{1}{9} \\
+            \hline
+            2 & \frac{1}{6} & \frac{1}{6} & \frac{1}{18} \\
+            \hline
+        \end{array}
+    \]
+    \begin{enumerate}[(a)]
+        \item Calcule \(P(1 \le X \le 2, Y \ge 1)\) e \(P(X = 1, Y > 1)\).
+        \item Determine \(E(X)\), \(E(Y)\) e \(\text{Cov}(X,Y)\).
+        \item \(X\) e \(Y\) são independentes? Justifique.
+    \end{enumerate}
+\end{exercicioBanco}
+

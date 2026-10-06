@@ -1,0 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    Seja \(X\) uma variável aleatória com função de probabilidade dada na tabela a seguir:
+    \[
+        \begin{array}{c|c|c|c|c|c}
+            x & 1 & 2 & 3 & 4 & 5 \\
+            \hline
+            f_{X}(x) & p^{2} & p^{2} & p & p & p^{2}
+        \end{array}
+    \]
+    \begin{enumerate}[(a)]
+        \item Encontre o valor de \(p\) para que \(f_{X}(x)\) seja, de fato, uma função de probabilidade.
+        %
+        \item Calcule \(E(X)\) e \(V(X)\).
+    \end{enumerate}
+\end{exercicioBanco}
+

@@ -1,0 +1,109 @@
+\newcommand{\turma}{ESTATÍSTICA}
+\newcommand{\professor}{Igor Martins Silva}
+\newcommand{\semestre}{2}
+\newcommand{\ano}{2026}
+\newcommand{\mesTexto}{setembro}
+\newcommand{\mesNum}{09}
+\newcommand{\dia}{03}
+\newcommand{\dataTexto}{\dia\ de \mesTexto\ de \ano}
+\newcommand{\dataNun}{\dia/\mesNum/\ano}
+
+\ifdefstring{\atividade}{prova}{
+    \newcommand{\titulo}{Avaliação de Estatística}
+}{
+    \newcommand{\titulo}{Lista de exercícios de Estatística}
+}
+
+\edef\pathCapa{\currfiledir}
+
+\newcommand{\subtitulo}{
+    %
+    \noindent
+    \begin{minipage}{2.8cm}
+        \includegraphics[width=2.8cm]{\pathCapa Logo_Cefet.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{\dimexpr\textwidth-6.2cm\relax}
+        \begin{center}
+            CEFET-MG -- Campus Contagem \\[3pt]
+            \titulo \ -- \semestre.\textordmasculine\ Semestre de \ano \\[3pt]
+            \professor
+        \end{center}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{3.2cm}
+        \includegraphics[width=3.2cm]{\pathCapa Brasao_Brasil.png}
+    \end{minipage}
+    %
+    
+    %
+    \begin{center}
+        \vspace{15pt}
+        \begin{tabular}{|C{250pt}|C{250pt}|}
+            \hline
+            \textbf{ASSUNTO} &
+            \textbf{TURMA} \\
+            \hline
+            \assunto & \turma \\
+            \hline
+        \end{tabular}
+    \end{center}
+    %
+    \vspace{15pt}
+}
+
+\newcommand{\subtituloAlt}{
+    %
+    \noindent
+    \begin{minipage}{2.8cm}
+        \includegraphics[width=2.8cm]{\pathCapa Logo_Cefet.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{\dimexpr\textwidth-6.2cm\relax}
+        \begin{center}
+            CEFET-MG -- Campus Contagem \\[3pt]
+            \titulo \ -- \semestre.\textordmasculine\ Semestre de \ano \\[3pt]
+            \professor
+        \end{center}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{3.2cm}
+        \includegraphics[width=3.2cm]{\pathCapa Brasao_Brasil.png}
+    \end{minipage}
+    %
+    
+    %
+    \begin{center}
+        \vspace{15pt}
+        \begin{tabular}{|C{250pt}|C{100pt}|C{100pt}|}
+            \hline
+            \textbf{ASSUNTO} &
+            \textbf{DATA} &
+            \textbf{VALOR} \\
+            \hline
+            \assunto & \dataNun & \ValorProva\ pontos \\
+            \hline
+        \end{tabular}
+    \end{center}
+    %
+    \vspace{15pt}
+}
+
+\newcommand{\valorquestao}{}
+
+\newenvironment{exercicioBanco}[1][]{%
+    \ifdefstring{\atividade}{prova}{%
+        \begin{exercicio}[#1]%
+    }{%
+        \begin{exercicio}%
+    }%
+}{%
+    \end{exercicio}
+}
+
+\ifdefstring{\atividade}{lista}{
+    \pagecolor{background-color}
+}{
+    
+}
+

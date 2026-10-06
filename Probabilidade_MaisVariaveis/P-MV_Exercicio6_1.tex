@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    A função conjunta de probabilidade entre as variáveis aleatórias independentes \(X\) e \(Y\) é apresentada abaixo.
+    %
+    \[
+    \renewcommand{\arraystretch}{1.5}
+    \begin{array}{|c|c|c|c|c|}
+        \hline
+        X\backslash Y & -2 & 0 & 2 & P(X = x) \\
+        \hline
+        1 &  &  &  & 0,3 \\
+        \hline
+        2 &  &  & & 0,7 \\
+        \hline
+        P(Y = y) & 0,2 &  & 0,3 & \\
+        \hline
+    \end{array}
+    \]
+    %
+    \begin{enumerate}[(a)]
+        \item Complete a tabela.
+        \item Calcule da esperança e a variância da variável \(2X - Y\).
+    \end{enumerate}
+\end{exercicioBanco}
+

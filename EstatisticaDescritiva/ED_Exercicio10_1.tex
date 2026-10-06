@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+O quadro a seguir apresenta a quantidade de um tipo de pão vendido em uma semana em uma padaria.
+
+\begin{longtable}{l c}
+\hline
+Dia da semana & Número de pães vendidos \\
+\hline
+Domingo       & 250 \\
+Segunda-feira & 208 \\
+Terça-feira   & 215 \\
+Quarta-feira  & 251 \\
+Quinta-feira  & 187 \\
+Sexta-feira   & 187 \\
+Sábado        & 186 \\
+\hline
+\end{longtable}
+
+O dono da padaria decidiu que, na semana seguinte, a produção diária desse tipo de pão seria igual ao número de pães vendidos no dia da semana em que tal quantidade foi a mais próxima da média das quantidades vendidas na semana.
+
+Qual o dia da semana utilizado como referência para a quantidade de pães a serem produzidos diariamente?
+\end{exercicioBanco}
+

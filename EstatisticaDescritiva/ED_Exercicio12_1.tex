@@ -1,0 +1,27 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Um posto de saúde registrou a quantidade de vacinas aplicadas contra febre amarela nos últimos cinco meses:
+\begin{itemize}
+    \begin{multicols}{3}
+        \item 1º mês: 21;
+        \item 2º mês: 22;
+        \item 3º mês: 25;
+        \item 4º mês: 31;
+        \item 5º mês: 21.
+    \end{multicols}
+\end{itemize}
+
+No início do primeiro mês, esse posto de saúde tinha 228 vacinas em estoque. A política de reposição prevê a aquisição de novas vacinas, no início do sexto mês, de tal forma que a quantidade inicial em estoque para os próximos meses seja igual a 12 vezes a média das quantidades mensais aplicadas nos últimos cinco meses.
+
+Qual a quantidade de vacinas que deve ser adquirida no início do sexto mês?
+\end{exercicioBanco}
+

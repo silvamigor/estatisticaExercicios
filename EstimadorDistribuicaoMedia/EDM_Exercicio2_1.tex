@@ -1,0 +1,30 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    O número de divórcios por indivíduo adulto casado, em certa comunidade, foi modelado pela variável aleatória \(D\), cuja função de probabilidade é apresentada a seguir:
+
+\[
+\begin{array}{c|cccc}
+D   & 0 & 1 & 2 & 3 \\ \hline
+p_i & 0.5 & 0.4 & 0.05 & 0.05
+\end{array}
+\]
+
+Uma amostra, representada por \((D_1, D_2)\), foi sorteada com dois desses indivíduos e os seguintes estimadores, para a média de divórcios, foram considerados:
+\[
+\hat{\mu}_1 = \sqrt{D_1D_2}
+\quad \text{e} \quad
+\hat{\mu}_2 = \max(D_1, D_2) - \min(D_1, D_2).
+\]
+
+Para cada estimador, obtenha sua distribuição de probabilidade e verifique se é viciado.
+\end{exercicioBanco}
+

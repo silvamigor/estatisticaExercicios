@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+A tabela a seguir apresenta a distribuição de frequências relativas aos tempos de atendimento (em minutos) registrados em um posto de saúde:
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Tempo (min) & Frequência ($f_i$) \\ \hline
+$0 \vdash 10$ & 3 \\ \hline
+$10 \vdash 20$ & 5 \\ \hline
+$20 \vdash 30$ & 8 \\ \hline
+$30 \vdash 40$ & 4 \\ \hline
+$40 \vdash 50$ & 2 \\ \hline
+\end{tabular}
+\end{center}
+
+Com base nessa tabela, classifique os dados quanto sua assimetria, usando o 2.\textordmasculine\ coeficiente de assimetria de Pearson, \(e_2\). Para isso, considere a seguinte classificação:
+\begin{center}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Valor de } $e_2$ & \textbf{Classificação da Assimetria} \\ \hline
+        $|e_2| = 0$ & Simétrica \\ \hline
+        $0 < |e_2| \le 0{,}15$ & Assimetria fraca \\ \hline
+        $0{,}15 < |e_2| \le 1$ & Assimetria moderada \\ \hline
+        $|e_2| > 1$ & Assimetria forte \\ \hline
+    \end{tabular}
+\end{center}
+\end{exercicioBanco}

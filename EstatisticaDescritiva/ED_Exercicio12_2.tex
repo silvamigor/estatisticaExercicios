@@ -1,0 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Uma biblioteca escolar registrou a quantidade de livros emprestados nos últimos cinco meses:
+
+\begin{itemize}
+    \begin{multicols}{3}
+        \item 1º mês: 18;
+        \item 2º mês: 20;
+        \item 3º mês: 24;
+        \item 4º mês: 26;
+        \item 5º mês: 22.
+    \end{multicols}
+\end{itemize}
+
+No início do primeiro mês, a biblioteca possuía 210 livros disponíveis para empréstimo. A política de reposição prevê a aquisição de novos livros, no início do sexto mês, de modo que a quantidade inicial disponível para os próximos meses seja igual a 12 vezes a média das quantidades mensais emprestadas nos últimos cinco meses. Qual é a quantidade de livros que deve ser adquirida no início do sexto mês?
+\end{exercicioBanco}
+

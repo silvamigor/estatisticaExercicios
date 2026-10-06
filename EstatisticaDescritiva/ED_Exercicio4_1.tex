@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+A tabela a seguir apresenta a distribuição de frequências relativas aos tempos de atendimento (em minutos) registrados em um posto de saúde:
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Tempo (min) & Frequência ($f_i$) \\ \hline
+$0 \vdash 10$ & 3 \\ \hline
+$10 \vdash 20$ & 5 \\ \hline
+$20 \vdash 30$ & 8 \\ \hline
+$30 \vdash 40$ & 4 \\ \hline
+$40 \vdash 50$ & 2 \\ \hline
+\end{tabular}
+\end{center}
+
+Com base nessa tabela, determine:
+
+\begin{enumerate}[(a)]
+    \item A média (\(\mu\)) do tempo de atendimento.
+    \item O primeiro quartil ($Q_1$) e o terceiro quartil ($Q_3$).
+    \item A mediana ($\theta$).
+    \item A moda ($Mo$) calculada pela fórmula de Czuber.
+\end{enumerate}
+\end{exercicioBanco}

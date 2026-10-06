@@ -1,0 +1,30 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Um concorrente participa de um jogo de auditório no qual há três portas fechadas ($A$, $B$ e $C$). Atrás de uma das portas há um carro zero quilômetro e, atrás das outras duas, há apenas uma ovelha em cada. O prêmio do participante é o que estiver atrás da porta escolhida. 
+
+O jogo ocorre da seguinte maneira:
+\begin{enumerate}[1.]
+    \item O participante escolhe inicialmente uma porta (por exemplo, a Porta $A$).
+    \item O apresentador, que sabe exatamente onde está o carro, abre uma das outras duas portas que ele sabe que contém uma ovelha (por exemplo, a Porta $C$).
+    \item Em seguida, o apresentador faz a seguinte pergunta ao participante: \textit{“Você deseja manter a sua escolha original ou prefere trocar para a porta que sobrou (Porta $B$)?”}
+\end{enumerate}
+
+Com base nas regras de probabilidade, responda aos itens a seguir:
+
+\begin{enumerate}[(a)]
+    \item Qual é a probabilidade de o participante ganhar o carro se ele não trocar de porta?
+    \item Qual é a probabilidade de ele ganhar o carro se ele aceitar trocar de porta? Justifique calculando as probabilidades condicionais associadas.
+    \item A estratégia de trocar de porta realmente aumenta as chances do concorrente de ganhar o prêmio?
+\end{enumerate}
+\end{exercicioBanco}
+
+

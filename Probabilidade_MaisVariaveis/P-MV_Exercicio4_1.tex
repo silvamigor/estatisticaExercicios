@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    Um paleontólogo acredita que o número de minerais presentes em certo tipo de rocha pode influir na chance de se encontrar fósseis perto de uma indústria calcária. Através de amostras de rocha obtidas em levantamentos de campo, ele obteve a distribuição conjunta para as variáveis \(Z\): número de minerais presentes e \(W\): variável que assume 1, se for observada a presença de fóssil e 0, caso contrário.
+    %
+    \[
+    \renewcommand{\arraystretch}{1.5}
+    \begin{array}{|c|c|c|c|}
+        \hline
+        W\backslash Z & 1 & 2 & 3 \\
+        \hline
+        0 & \frac{1}{8} & \frac{1}{8} & \frac{1}{4} \\
+        \hline
+        1 & \frac{1}{8} & \frac{1}{4} & \frac{1}{8} \\
+        \hline
+    \end{array}
+    \]
+    %
+    \begin{enumerate}[(a)]
+        \item Calcule \(P(W = 0, Z > 1)\).
+        \item Encontre as distribuições marginais para \(Z\) e \(W\).
+    \end{enumerate}
+\end{exercicioBanco}
+

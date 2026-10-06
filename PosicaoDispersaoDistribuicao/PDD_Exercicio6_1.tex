@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \renewcommand{\valorquestao}{\ValorQ\ pontos}
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+    O tempo, em minutos, de digitação de um texto por secretárias experientes é uma variável aleatória contínua \(X\). Sua densidade é apresentada a seguir.
+    \[
+        f(x) = \left\{
+            \begin{array}{ll}
+                \frac{1}{4}, & \text{ se } 0 \le x < 2, \\[5pt]
+                \frac{1}{8}, & \text{ se } 2 \le x < 6, \\[5pt]
+                0, & \text{ caso contrário.}
+            \end{array}
+        \right.
+    \]
+    Determine o valor esperado e a variância de \(X\).
+\end{exercicioBanco}
+
