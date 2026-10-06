@@ -1,15 +1,20 @@
 \documentclass[a4paper,12pt]{article}
 
 \input{../Preambulo.tex}
-\newcommand{\assunto}{ESTATÍSTICA DESCRITIVA E PROBABILIDADE}
+\newcommand{\assunto}{VARIÁVEIS ALEATÓRIAS}
 \newcommand{\atividade}{prova} % prova ou lista
-\usepackage{xfp}
 \newcommand{\ValorProva}{33}
 \newcommand{\NumTotalQuestoes}{5}
+\pgfmathsetmacro{\MDC}{gcd(\ValorProva,\NumTotalQuestoes)}
+\pgfmathsetmacro{\NumSimpl}{int(\ValorProva/\MDC)}
+\pgfmathsetmacro{\DenSimpl}{int(\NumTotalQuestoes/\MDC)}
+
 \newcommand{\ValorQ}{%
-    \frac{\inteval{\ValorProva / gcd(\ValorProva,\NumTotalQuestoes)}}
-         {\inteval{\NumTotalQuestoes / gcd(\ValorProva,\NumTotalQuestoes)}}%
+\ensuremath{
+    \frac{\NumSimpl}{\DenSimpl}%
 }
+}
+
 \input{../Variaveis.tex}
 
 \hypersetup{
@@ -28,27 +33,29 @@
     
     \phantomsection
     \addcontentsline{toc}{section}{Exercício 1}
-    \input{../EstatisticaDescritiva/ED_Exercicio4_2}
+    \input{../Probabilidade_Distribuicoes/P-D_Exercicio16_3}
     
     \phantomsection
     \addcontentsline{toc}{section}{Exercício 2}
-    \input{../EstatisticaDescritiva/ED_Exercicio9_3}
+    \input{../PosicaoDispersaoDistribuicao/PDD_Exercicio7_1}
     
     \phantomsection
     \addcontentsline{toc}{section}{Exercício 3}
-    \input{../Probabilidade_ConceitosIniciais/P-CI_Exercicio3_2}
+    \input{../EstimadorDistribuicaoMedia/EDM_Exercicio2_2}
     
     \phantomsection
     \addcontentsline{toc}{section}{Exercício 4}
-    \input{../Probabilidade_ConceitosIniciais/P-CI_Exercicio13_1}
+    \input{../EstimadorDistribuicaoMedia/EDM_Exercicio3_2}
+    
+    \newpage 
     
     \phantomsection
     \addcontentsline{toc}{section}{Exercício 5}
-    \input{../Probabilidade_ConceitosIniciais/P-CI_Exercicio10_3}
+    \input{../Probabilidade_MaisVariaveis/P-MV_Exercicio7_2}
     
-    %\newpage 
+    \newpage 
     
-    %\input{TabNormalPadrao}
+    \input{TabNormalPadrao}
     
     %\newpage
     

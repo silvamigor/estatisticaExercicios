@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
     Uma urna contém 3 bolas numeradas: $1$, $2$ e $3$. A probabilidade de retirar cada bola é proporcional ao número escrito nela. Duas bolas são retiradas sucessivamente, com reposição. Se a soma dos números das bolas retiradas for:

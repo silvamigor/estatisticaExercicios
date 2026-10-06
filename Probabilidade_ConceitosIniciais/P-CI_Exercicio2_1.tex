@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
 Sejam \(A\) e \(B\) dois eventos em um dado espaço amostral, tais que \(P(A) = 0,2\), \(P(B) = p\), \(P(A \cup B) = 0,5\) e \(P(A \cap B) = 0,1\). Determine o valor de \(p\).

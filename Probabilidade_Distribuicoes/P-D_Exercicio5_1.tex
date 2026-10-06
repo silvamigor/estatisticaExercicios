@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
 Um usuário de transporte coletivo chega pontualmente às 8 horas para pegar o seu ônibus. Devido ao trânsito caótico, a demora pode ser qualquer tempo entre 1 e 20 minutos (admita que o relógio ``pule'' de minuto em minuto).

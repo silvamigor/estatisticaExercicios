@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
     Seja \(X \sim \mathcal{N}(\mu,\sigma^{2})\). Calcule a esperança e a variância da variável \(Z = \dfrac{X - \mu}{\sigma}\).

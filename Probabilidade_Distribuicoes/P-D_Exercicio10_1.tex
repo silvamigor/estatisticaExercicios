@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
 Uma moeda equilibrada é lançada sucessivamente, de modo independente, até que ocorra a primeira cara. Seja \(X\) a variável aleatória que conta o número de lançamentos anteriores à ocorrência de cara. Determine

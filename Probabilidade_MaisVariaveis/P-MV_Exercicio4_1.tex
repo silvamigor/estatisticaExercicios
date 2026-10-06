@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
     Um paleontólogo acredita que o número de minerais presentes em certo tipo de rocha pode influir na chance de se encontrar fósseis perto de uma indústria calcária. Através de amostras de rocha obtidas em levantamentos de campo, ele obteve a distribuição conjunta para as variáveis \(Z\): número de minerais presentes e \(W\): variável que assume 1, se for observada a presença de fóssil e 0, caso contrário.

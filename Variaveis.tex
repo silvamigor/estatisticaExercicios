@@ -2,9 +2,9 @@
 \newcommand{\professor}{Igor Martins Silva}
 \newcommand{\semestre}{2}
 \newcommand{\ano}{2026}
-\newcommand{\mesTexto}{setembro}
-\newcommand{\mesNum}{09}
-\newcommand{\dia}{03}
+\newcommand{\mesTexto}{outubro}
+\newcommand{\mesNum}{10}
+\newcommand{\dia}{14}
 \newcommand{\dataTexto}{\dia\ de \mesTexto\ de \ano}
 \newcommand{\dataNun}{\dia/\mesNum/\ano}
 
@@ -90,6 +90,14 @@
 }
 
 \newcommand{\valorquestao}{}
+
+\newcommand{\definevalorquestao}{%
+    \ifdefstring{\atividade}{lista}{%
+        % Não faz nada para lista
+    }{%
+        \renewcommand{\valorquestao}{\ValorQ pontos}
+    }%
+}
 
 \newenvironment{exercicioBanco}[1][]{%
     \ifdefstring{\atividade}{prova}{%

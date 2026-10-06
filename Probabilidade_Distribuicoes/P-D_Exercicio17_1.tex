@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
 Seja \(X \sim \mathcal{N}(\mu,\sigma^{2})\). Determine \(a \in \bbR\) tal que \(P(\mu - a\sigma \le X \le \mu + a\sigma) = 0,99\).

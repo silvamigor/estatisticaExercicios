@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
     Será coletada uma amostra de uma população Normal com desvio padrão igual a 9. Para uma confiança de \(\gamma = 0,9\), determine a amplitude do intervalo de confiança para a média populacional nos casos em que o tamanho da amostra é 30, 50 ou 100.

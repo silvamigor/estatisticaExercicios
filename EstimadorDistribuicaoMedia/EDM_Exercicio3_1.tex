@@ -4,9 +4,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifdefstring{\atividade}{prova}{%
-    \renewcommand{\valorquestao}{\ValorQ\ pontos}
-}%
+\definevalorquestao
 
 \begin{exercicioBanco}[\valorquestao]
 Para se ajustar a uma máquina, a correia deve ter entre 60 e 62 cm de comprimento. Tendo em vista o processo de fabricação, o comprimento dessas correias pode ser considerado como uma variável aleatória com distribuição normal de média 60,7 cm e desvio padrão de 0,8 cm. Um grande revendedor dessas correias estabelece um controle de qualidade que compra da fábrica: ele toma uma amostra de 4 correias do lote e só aceita o lote se o comprimento médio estiver dentro do tamanho aceito pela máquina. Supondo que as 4 amostras são independentes e seguem essa mesma distribuição do comprimento da correia, calcule a probabilidade de aceitação do lote.
